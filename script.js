@@ -13,28 +13,37 @@ Alterando e Acessando textos
 textContent -> Só HTML
 innerText -> Conteúdo sem HTML (apenas texto) leva em conta o CSS
 
-
-*/
-
-/* const button = document.querySelector(".main-button")
+const button = document.querySelector(".main-button")
 button.style.color = "#852394"
 button.style.backgroundColor = "white"
 
-*/
+
 const input = document.querySelector("#main-input")
 
 const button = document.querySelector("h1")
 button.style.fontSize = "100px"
 
 
-
-
 function cliqueiNoBotao(){
     alert(input.value)
 }
-
 
 function digiteiNoInput(){
     console.log(input.value)
 }
 
+*/
+
+const input = document.querySelector("#main-input")
+const select = document.querySelector("select")
+const button = document.querySelector(".main-button")
+
+function troqueiValor(event){
+    console.log(event)
+}
+
+select.addEventListener("change", troqueiValor)
+
+input.addEventListener("keypress", troqueiValor)
+
+button.addEventListener("click", troqueiValor)
