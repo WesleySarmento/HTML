@@ -16,8 +16,25 @@ innerText -> Conteúdo sem HTML (apenas texto) leva em conta o CSS
 
 */
 
-const element = document.querySelector("#main-input")
+/* const button = document.querySelector(".main-button")
+button.style.color = "#852394"
+button.style.backgroundColor = "white"
 
-element.placeholder = "Agora é esse texto"
-console.log(element.placeholder)
+*/
+const input = document.querySelector("#main-input")
+
+const button = document.querySelector("h1")
+button.style.fontSize = "100px"
+
+
+
+
+function cliqueiNoBotao(){
+    alert(input.value)
+}
+
+
+function digiteiNoInput(){
+    console.log(input.value)
+}
 
